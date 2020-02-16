@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Minifull`s Blog</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico" th:href="@{/img/about-img/1.png}">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" th:href="@{/style.css}" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" th:href="@{css/responsive/responsive.css}" rel="stylesheet">
+
+</head>
+
+<body class="bg-pattern">
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="yummy-load"></div>
+    </div>
+
+    <!-- Background Pattern Swither -->
+    <div id="pattern-switcher">
+        Bg Pattern
+    </div>
+    <div id="patter-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <!-- ****** Top Header Area Start ****** -->
+    <div th:replace="blog/head::head-fragment"></div>
+    <!-- ****** Top Header Area End ****** -->
+
+    <!-- ****** Header Area Start ****** -->
+
+    <!-- ****** Header Area End ****** -->
+
+    <!-- ****** Breadcumb Area Start ****** -->
+    <div class="breadcumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="bradcumb-title text-center">
+                        <h2>Categories Page</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcumb-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Categories Page</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ****** Breadcumb Area End ****** -->
+
+    <!-- ****** Archive Area Start ****** -->
+    <section class="archive-area section_padding_80">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Post -->
+                <div class="col-12 col-md-6 col-lg-4"  th:each="category : ${blogPageResult.list}">
+                    <div class="single-post wow fadeInUp" data-wow-delay="0.1s">
+
+                            <div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
+                                <img src="img/catagory-img/1.jpg" th:src="@{${category.categoryIcon}}" alt="">
+                                <div class="catagory-title">
+                                    <a href="#" th:href="@{'/category/' + ${category.categoryName}}">
+                                        <h5 th:text="${category.categoryName}">Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-12">
+                    <div class="pagination-area d-sm-flex mt-15">
+                        <nav aria-label="#">
+                            <ul class="pagination">
+                                <li class="page-item" th:if="${blogPageResult.currPage-1 >=1}">
+                                    <a class="page-link" href="#"  th:href="@{'/allcategory/' + ${blogPageResult.currPage-1}}"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Pre</a>
+                                </li>
+                                <li class="page-item" th:if="${blogPageResult.currPage+1 <=blogPageResult.totalPage}">
+                                    <a class="page-link" href="#"  th:href="@{'/allcategory/'+ ${blogPageResult.currPage+1}}">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="page-status">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ****** Archive Area End ****** -->
+
+    <!-- ****** Instagram Area Start ****** -->
+    <div th:replace="blog/foot::foot-fragment"></div>
+    <!-- ****** Footer Menu Area End ****** -->
+
+    <script src="js/jquery/jquery-2.2.4.min.js" th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js" th:src="@{/js/bootstrap/popper.min.js}"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+    <!-- All Plugins JS -->
+    <script src="js/others/plugins.js" th:src="@{/js/others/plugins.js}"></script>
+    <!-- Active JS -->
+    <script src="js/active.js" th:src="@{/js/active.js}"></script>
+</body>

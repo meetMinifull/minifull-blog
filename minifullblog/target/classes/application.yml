@@ -1,0 +1,54 @@
+server:
+  port: 8081
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_blog_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&characterEncoding=utf8
+    username: root
+    password: yzxdyr19990210
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: pojo
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    root: info
+    com.incoding: debug
+  file: log/imcoding.log
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+
+
+#server:
+#  port: 80
+#
+#spring:
+#  mvc:
+#    servlet:
+#      load-on-startup: 1
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/my_blog_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC&characterEncoding=utf8
+#    username: root
+#    password: yzxdyr19990210
+#    mybatis:
+#      mapper-locations: classpath:mapper/*.xml
+#      type-aliases-package: com.javaer.myblog.entity
+#      map-underscore-to-camel-case: true
+#  thymeleaf:
+#    mode: HTML
+#
+
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Minifull`s Blog</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico" th:href="@{/img/about-img/1.png}">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" th:href="@{/style.css}" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" th:href="@{/css/responsive/responsive.css}" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/blog/css/paraiso-light.css}">
+</head>
+
+<body class="bg-pattern">
+<!-- Preloader Start -->
+<div id="preloader">
+    <div class="yummy-load"></div>
+</div>
+
+<!-- Background Pattern Swither -->
+<div id="pattern-switcher">
+    Bg Pattern
+</div>
+<div id="patter-close">
+    <i class="fa fa-times" aria-hidden="true"></i>
+</div>
+
+<!-- ****** Top Header Area Start ****** -->
+<div th:replace="blog/head::head-fragment"></div>
+<!-- ****** Header Area End ****** -->
+
+<!-- ****** Breadcumb Area Start ****** -->
+<div class="breadcumb-area">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="bradcumb-title text-center">
+                    <h2 th:text="${blogDetailVO.blogTitle}">Single Post Blog</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="breadcumb-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page" th:text="${blogDetailVO.blogTitle}">Single Post Blog</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ****** Breadcumb Area End ****** -->
+
+<!-- ****** Single Blog Area Start ****** -->
+<section class="single_blog_area section_padding_80">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="row no-gutters">
+
+                    <!-- Single Post Share Info -->
+                    <div class="col-2 col-sm-1">
+                        <div class="single-post-share-info mt-100">
+                            <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" class="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Single Post -->
+                    <div class="col-10 col-sm-11">
+                        <div class="single-post">
+                            <div class="post-thumb">
+                                <img src="img/blog-img/10.jpg" alt="" th:src="${blogDetailVO.blogCoverImage}">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta d-flex">
+                                    <div class="post-author-date-area d-flex">
+                                        <!-- Post Author -->
+                                        <div class="post-author">
+                                            <a href="#">By Minifull</a>
+                                        </div>
+                                        <!-- Post Date -->
+                                        <div class="post-date">
+                                            <a href="#" th:text="${#dates.format(blogDetailVO.createTime, 'yyyy-MM-dd')}">May 19, 2020</a>
+                                        </div>
+                                    </div>
+                                    <!-- Post Comment & Share Area -->
+                                    <div class="post-comment-share-area d-flex">
+                                        <!-- Post Favourite -->
+                                        <div class="post-favourite">
+                                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
+                                        </div>
+                                        <!-- Post Comments -->
+                                        <div class="post-comments">
+                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
+                                        </div>
+                                        <!-- Post Share -->
+                                        <div class="post-share">
+                                            <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="post-headline" th:text="${blogDetailVO.blogTitle}">Boil The Kettle And Make A Cup Of Tea Folks, This Is Going To Be A Big One!</h2>
+                                <th:block th:utext="${blogDetailVO.blogContent}"/>
+                            </div>
+                        </div>
+
+                        <!-- Tags Area -->
+                        <div class="tags-area" >
+                            <th:block th:each="blogTg: ${blogDetailVO.blogTags}">
+                                <a href="#" th:text="${blogTg}">Multipurpose</a>
+                            </th:block>
+
+                        </div>
+
+                        <!-- Related Post Area -->
+                        <div class="related-post-area section_padding_50">
+                            <h4 class="mb-30">Related post</h4>
+
+                            <div class="related-post-slider owl-carousel">
+                                <!-- Single Related Post-->
+                                <div class="single-post" th:each="blog: ${blogPageResult.list}">
+                                    <!-- Post Thumb -->
+                                    <div class="post-thumb">
+                                        <img src="img/blog-img/15.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+                                    </div>
+                                    <!-- Post Content -->
+                                    <div class="post-content">
+                                        <div class="post-meta d-flex">
+                                            <div class="post-author-date-area d-flex">
+                                                <!-- Post Author -->
+                                                <div class="post-author">
+                                                    <a href="#">By Minifull</a>
+                                                </div>
+                                                <!-- Post Date -->
+                                                <div class="post-date">
+                                                    <a href="#" th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">May 19, 2017</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                                            <h6 th:text="${blog.blogTitle}">The Top Breakfast And Brunch Spots In Hove</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment Area Start -->
+                        <div class="comment_area section_padding_50 clearfix"  id="comment-container">
+                            <div th:fragment="commentList">
+                                <h4 class="mb-30"><span th:text="${totalComment}">0</span> Comments</h4>
+                                <ol>
+                                    <!-- Single Comment Area -->
+                                    <li class="single_comment_area" th:each="comment : ${comments}">
+                                        <div class="comment-wrapper d-flex" >
+                                            <!-- Comment Meta -->
+                                            <div class="comment-author">
+                                                <img src="img/blog-img/19.jpg" th:src="@{/img/blog-img/19.jpg}" alt="">
+                                            </div>
+                                            <!-- Comment Content -->
+                                            <div class="comment-content">
+                                                <span class="comment-date text-muted" th:text="${#dates.format(comment.commentCreateTime,'yyyy-MM-dd HH:mm')}">27 Aug 2018</span>
+                                                <h5 th:text="${comment.commentator}">Brandon Kelley</h5>
+                                                <p th:text="${comment.commentBody}">Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                                <a href="#">Like</a>
+                                                <a class="active" th:attr="data-commentid=${comment.commentId},data-commentnickname=${comment.commentator}" onclick="reply(this)">Reply</a>
+                                            </div>
+                                        </div>
+                                        <ol class="children" th:if="${#arrays.length(comment.replyComments)}>0">
+                                            <li class="single_comment_area" th:each="reply : ${comment.replyComments}">
+                                                <div class="comment-wrapper d-flex">
+                                                    <!-- Comment Meta -->
+                                                    <div class="comment-author">
+                                                        <img src="img/blog-img/18.jpg" th:src="@{/img/blog-img/18.jpg}" alt="">
+                                                    </div>
+                                                    <!-- Comment Content -->
+                                                    <div class="comment-content">
+                                                        <span class="comment-date text-muted" th:text="${#dates.format(reply.commentCreateTime,'yyyy-MM-dd HH:mm')}">27 Aug 2018</span>
+                                                        <span th:text="|@ ${reply.parentComment.commentator}|" class="m-teal">@ 小白</span><h5 th:text="${reply.commentator}">Brandon Kelley</h5>
+                                                        <p th:text="${reply.commentBody}">Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+                                                        <a href="#" >Like</a>
+                                                        <a class="active" th:attr="data-commentid=${reply.commentId},data-commentnickname=${reply.commentator}" onclick="reply(this)">Reply</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Leave A Comment -->
+                        <div class="leave-comment-area section_padding_50 clearfix">
+                            <div class="comment-form">
+                                <h4 class="mb-30">Leave A Comment</h4>
+
+                                <!-- Comment Form -->
+                                <div class="ui form">
+                                    <input  type="hidden" name="blog.id" th:value="${blogDetailVO.blogId}">
+                                    <input  type="hidden" name="parent.commentid" value="-1">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="nickname" id="contact-name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="contact-email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="content" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                    <button type="button" id="commentpost-btn" class="btn contact-btn">Post Comment</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****** Blog Sidebar ****** -->
+            <div th:replace="blog/side::side-fragment"></div>
+        </div>
+    </div>
+</section>
+<!-- ****** Single Blog Area End ****** -->
+<!-- ****** Blog Area End ****** -->
+<div th:replace="blog/foot::foot-fragment"></div>
+
+<!-- ****** Footer Menu Area End ****** -->
+
+<!-- Jquery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js" th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js" th:src="@{/js/bootstrap/popper.min.js}"></script>
+<!-- Bootstrap-4 js -->
+<script src="js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<!-- All Plugins JS -->
+<script src="js/others/plugins.js" th:src="@{/js/others/plugins.js}"></script>
+<!-- Active JS -->
+<script src="js/active.js" th:src="@{/js/active.js}"></script>
+
+<script th:src="@{/blog/js/highlight.pack.js}"></script>
+
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#comment-container").load("[[@{/comments/{id}(id=${blogDetailVO.blogId})}]]");
+    });
+    $(function () {
+        // 代码高亮
+        $('pre code').each(function (i, block) {
+            hljs.highlightBlock(block);
+        });
+    });
+
+    $('#commentpost-btn').click(function () {
+        var search_str = /^[\w\-\.]+@[\w\-\.]+(\.\w+)+$/;
+        var i = 0;
+        var commentator = $("[name='nickname']").val()
+        var email = $("[name='email']").val()
+        var commentBody = $("[name='content']").val()
+        if(commentator.length<1){
+            $("[name='nickname']").attr("placeholder", "请输入");
+            i++;
+        }
+        if(!search_str.test(email)){
+
+            $("[name='email']").attr("placeholder", "请输入正确邮箱格式");
+            $("[name='email']").val('')
+            i++;
+        }
+        if(commentBody.length<1){
+            $("[name='content']").attr("placeholder", "请输入");
+            i++;
+        }
+
+        if(i == 0){
+            postData();
+        }
+    })
+
+    function postData() {
+        $("#comment-container").load("[[@{/comments}]]",{
+            "parentcommentId" : $("[name='parent.commentid']").val(),
+            "blogId" : $("[name='blog.id']").val(),
+            "commentator": $("[name='nickname']").val(),
+            "email"   : $("[name='email']").val(),
+            "commentBody" : $("[name='content']").val()
+        },function (responseTxt, statusTxt, xhr) {
+            $(window).scrollTo($('#comment-container'),500);
+            clearContent();
+        });
+    }
+
+    function clearContent() {
+        $("[name='content']").val('');
+        $("[name='parentComment.id']").val(-1);
+        $("[name='nickname']").val(''), $("[name='email']").val(''),
+        $("[name='content']").attr("placeholder", "Message");
+    }
+
+    function reply(obj) {
+        var commentId = $(obj).data('commentid');
+        var commentNickname = $(obj).data('commentnickname');
+        $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
+        $("[name='parent.commentid']").val(commentId);
+        $(window).scrollTo($('#comment-form'),500);
+    }
+
+</script>
+</body>

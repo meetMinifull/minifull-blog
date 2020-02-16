@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Minifull`s Blog</title>
+
+    <link rel="icon" href="img/core-img/favicon.ico" th:href="@{/img/about-img/1.png}">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" th:href="@{/style.css}" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" th:href="@{css/responsive/responsive.css}" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-pattern">
+<!-- Preloader Start -->
+<div id="preloader">
+    <div class="yummy-load"></div>
+</div>
+
+<!-- Background Pattern Swither -->
+<div id="pattern-switcher">
+    Bg Pattern
+</div>
+<div id="patter-close">
+    <i class="fa fa-times" aria-hidden="true"></i>
+</div>
+
+<!-- ****** Top Header Area Start ****** -->
+<div th:replace="blog/head::head-fragment"></div>
+<!-- ****** Header Area End ****** -->
+
+<!-- ****** Welcome Post Area Start ****** -->
+<section class="welcome-post-sliders owl-carousel">
+
+    <!-- Single Slide -->
+    <div class="welcome-single-slide" th:each="blog: ${hotBlogs}">
+        <!-- Post Thumb -->
+        <img src="img/bg-img/slide-1.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+        <!-- Overlay Text -->
+        <div class="project_title">
+            <div class="post-date-commnents d-flex">
+                <a href="#" th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">May 19, 2017</a>
+                <a href="#"><span th:text="${blog.blogViews}"></span> views</a>
+            </div>
+            <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                <h5 th:text="${blog.blogTitle}">“I’ve Come and I’m Gone”: A Tribute to Istanbul’s Street</h5>
+            </a>
+        </div>
+    </div>
+
+</section>
+<!-- ****** Welcome Area End ****** -->
+
+
+<!-- ****** Categories Area Start ****** -->
+<section class="categories_area clearfix" id="about">
+    <div class="container"  >
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4"  th:each="category : ${allCategories}">
+                <div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
+                    <img src="img/catagory-img/1.jpg" th:src="@{${category.categoryIcon}}" alt="">
+                    <div class="catagory-title">
+                        <a href="#" th:href="@{'/category/' + ${category.categoryName}}">
+                            <h5 th:text="${category.categoryName}">Food</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
+                    <img src="img/catagory-img/1.jpg" th:src="@{/img/catagory-img/3.jpg}" alt="">
+                    <div class="catagory-title">
+                        <a href="#" th:href="@{/allcategory}">
+                            <h5>More</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ****** Categories Area End ****** -->
+
+<!-- ****** Blog Area Start ****** -->
+<section class="blog_area section_padding_0_80">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="row">
+                    <!-- ******* List Blog Area Start ******* -->
+                    <div class="col-12" th:each="blog,status: ${blogPageResult.list}" th:if="${status.index == 0}">
+                        <div class="single-post wow fadeInUp" data-wow-delay=".2s">
+                            <!-- Post Thumb -->
+                            <div class="post-thumb">
+                                <img src="img/blog-img/1.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+                            </div>
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <div class="post-meta d-flex">
+                                    <div class="post-author-date-area d-flex">
+                                        <!-- Post Author -->
+                                        <div class="post-author">
+                                            <a href="#">By Minifull</a>
+                                        </div>
+                                        <!-- Post Date -->
+                                        <div class="post-date">
+                                            <a href="#" th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">May 19, 2017</a>
+                                        </div>
+                                    </div>
+                                    <!-- Post Comment & Share Area -->
+                                    <div class="post-comment-share-area d-flex">
+                                        <!-- Post Favourite -->
+                                        <div class="post-favourite">
+                                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
+                                        </div>
+                                        <!-- Post Comments -->
+                                        <div class="post-comments">
+                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
+                                        </div>
+                                        <!-- Post Share -->
+                                        <div class="post-share">
+                                            <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                                    <h2 class="post-headline" th:text="${blog.blogTitle}">Boil The Kettle And Make A Cup Of Tea Folks, This Is Going To Be A Big One!</h2>
+                                </a>
+<!--                                <p>Tiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>-->
+                                <a href="#" class="read-more" th:href="@{'/blog/' + ${blog.blogId}}">Continue Reading..</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Post -->
+                    <div class="col-12 col-md-6" th:each="blog,status: ${blogPageResult.list}" th:if="${status.index gt 0 and status.index lt 5}">
+                        <div class="single-post wow fadeInUp" data-wow-delay=".4s">
+                            <!-- Post Thumb -->
+                            <div class="post-thumb">
+                                <img src="img/blog-img/2.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+                            </div>
+                            <!-- Post Content -->
+                            <div class="post-content">
+                                <div class="post-meta d-flex">
+                                    <div class="post-author-date-area d-flex">
+                                        <!-- Post Author -->
+                                        <div class="post-author">
+                                            <a href="#">By Minifull</a>
+                                        </div>
+                                        <!-- Post Date -->
+                                        <div class="post-date">
+                                            <a href="#" th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">May 19, 2017</a>
+                                        </div>
+                                    </div>
+                                    <!-- Post Comment & Share Area -->
+                                    <div class="post-comment-share-area d-flex">
+                                        <!-- Post Favourite -->
+                                        <div class="post-favourite">
+                                            <a href="#" th:text="${blog.blogViews}"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
+                                        </div>
+                                        <!-- Post Comments -->
+                                        <div class="post-comments">
+                                            <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> 12</a>
+                                        </div>
+                                        <!-- Post Share -->
+                                        <div class="post-share">
+                                            <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                                    <h4 class="post-headline" th:text="${blog.blogTitle}">Where To Get The Best Sunday Roast In The Cotswolds</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Post -->
+                                        <div class="col-12"  th:each="blog,status: ${blogPageResult.list}" th:if="${status.index gt 4}">
+                                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".2s">
+                                                <!-- Post Thumb -->
+                                                <div class="post-thumb">
+                                                    <img src="img/blog-img/6.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+                                                </div>
+                                                <!-- Post Content -->
+                                                <div class="post-content">
+                                                    <div class="post-meta d-flex">
+                                                        <div class="post-author-date-area d-flex">
+                                                            <!-- Post Author -->
+                                                            <div class="post-author">
+                                                                <a href="#">By Minifull</a>
+                                                            </div>
+                                                            <!-- Post Date -->
+                                                            <div class="post-date">
+                                                                <a href="#" th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">May 19, 2017</a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Post Comment & Share Area -->
+                                                        <div class="post-comment-share-area d-flex">
+                                                            <!-- Post Favourite -->
+                                                            <div class="post-favourite">
+                                                                <a href="#" th:text="${blog.blogViews}"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
+                                                            </div>
+                                                            <!-- Post Comments -->
+                                                            <div class="post-comments">
+                                                                <a href="#" ><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+                                                            </div>
+                                                            <!-- Post Share -->
+                                                            <div class="post-share">
+                                                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                                                        <h4 class="post-headline"  th:text="${blog.blogTitle}">The 10 Best Bars By The Seaside In Blackpool, UK</h4>
+                                                    </a>
+                                                    <p></p>
+                                                    <a href="#"  th:href="@{'/blog/' + ${blog.blogId}}" class="read-more">Continue Reading..</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                </div>
+            </div>
+            <!-- ****** Blog Sidebar ****** -->
+            <div th:replace="blog/side::side-fragment"></div>
+        </div>
+        <div class="pagination-area d-sm-flex mt-15">
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item" th:if="${blogPageResult.currPage-1 >=1}">
+                        <a class="page-link" href="#"  th:href="@{'/page/' + ${blogPageResult.currPage-1}}"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Pre</a>
+                    </li>
+                    <li class="page-item" th:if="${blogPageResult.currPage+1 <=blogPageResult.totalPage}">
+                        <a class="page-link" href="#"  th:href="@{'/page/' + ${blogPageResult.currPage+1}}">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+<!-- ****** Blog Area End ****** -->
+
+<!-- ****** Instagram Area Start ****** -->
+<!-- ****** Blog Area End ****** -->
+<div th:replace="blog/foot::foot-fragment"></div>
+
+<!-- ****** Footer Menu Area End ****** -->
+
+<!-- Jquery-2.2.4 js -->
+<script src="js/jquery/jquery-2.2.4.min.js" th:src="@{/js/jquery/jquery-2.2.4.min.js}"></script>
+<!-- Popper js -->
+<script src="js/bootstrap/popper.min.js" th:src="@{/js/bootstrap/popper.min.js}"></script>
+<!-- Bootstrap-4 js -->
+<script src="js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}"></script>
+<!-- All Plugins JS -->
+<script src="js/others/plugins.js" th:src="@{/js/others/plugins.js}"></script>
+<!-- Active JS -->
+<script src="js/active.js" th:src="@{/js/active.js}"></script>
+</body>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+            <!-- ****** Blog Sidebar ****** -->
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4" th:fragment="side-fragment">
+                <div class="blog-sidebar mt-5 mt-lg-0">
+                    <!-- Single Widget Area -->
+                    <div class="single-widget-area about-me-widget text-center">
+                        <div class="widget-title">
+                            <h6>About Me</h6>
+                        </div>
+                        <div class="about-me-widget-thumb">
+                            <img src="img/about-img/1.jpg" th:src="@{/img/about-img/1.png}" alt="">
+                        </div>
+                        <h4 class="font-shadow-into-light">Minifull</h4>
+                        <h5 class="font-shadow-into-light">Welcome My Friend</h5>
+                    </div>
+
+                    <!-- Single Widget Area -->
+                    <div class="single-widget-area subscribe_widget text-center">
+                        <div class="widget-title">
+                            <h6>Subscribe &amp; Follow</h6>
+                        </div>
+                        <div class="subscribe-link">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Single Widget Area -->
+
+                    <div class="single-widget-area popular-post-widget">
+                        <div class="widget-title text-center">
+                            <h6>Latest Post</h6>
+                        </div>
+                        <!-- Single Popular Post -->
+                        <div class="single-populer-post d-flex" th:each="blog : ${newBlogs}">
+                            <img src="img/sidebar-img/1.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+                            <div class="post-content">
+                                <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                                    <h6 th:text="${blog.blogTitle}">Top Wineries To Visit In England</h6>
+                                </a>
+                                <p th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">Tuesday, October 3, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Widget Area -->
+                    <div class="single-widget-area add-widget text-center">
+                        <div class="add-widget-area">
+                            <img src="img/sidebar-img/6.jpg"th:src="@{/img/sidebar-img/6.jpg}" alt="">
+                            <div class="add-text">
+                                <div class="yummy-table">
+                                    <div class="yummy-table-cell">
+                                        <h2>Know More</h2>
+                                        <p>Know More About Me Now!</p>
+                                        <a href="#" class="add-btn" th:href="@{/blog/aboutme}">Start</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Widget Area -->
+                    <div class="single-widget-area popular-post-widget">
+                        <div class="widget-title text-center">
+                            <h6>Populer Post</h6>
+                        </div>
+                        <!-- Single Popular Post -->
+                        <div class="single-populer-post d-flex" th:each="blog : ${hotBlogs}">
+                            <img src="img/sidebar-img/1.jpg" th:src="@{${blog.blogCoverImage}}" alt="">
+                            <div class="post-content">
+                                <a href="#" th:href="@{'/blog/' + ${blog.blogId}}">
+                                    <h6 th:text="${blog.blogTitle}">Top Wineries To Visit In England</h6>
+                                </a>
+                                <p th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}">Tuesday, October 3, 2017</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Single Widget Area -->
+                    <div class="single-widget-area newsletter-widget">
+                        <div class="widget-title text-center">
+                            <h6>hi~</h6>
+                        </div>
+                        <p>您可以献上您的宝贵意见</p>
+                        <div class="newsletter-form">
+                            <form action="#" method="post">
+                                <input type="email" name="newsletter-email" id="email" placeholder="please input...">
+                                <button type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</html>
+

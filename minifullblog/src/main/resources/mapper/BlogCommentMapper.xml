@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.javaer.myblog.mapper.BlogCommentMapper">
+    <insert id="save">
+        insert into blog_comment (comment_id, blog_id,parentcomment_id, commentator,
+                                     email, comment_body,
+                                     comment_create_time, comment_status, is_deleted, is_admin
+        )
+        values (#{commentId,jdbcType=BIGINT}, #{blogId,jdbcType=BIGINT},#{parentcommentId}, #{commentator,jdbcType=VARCHAR},
+                #{email,jdbcType=VARCHAR}, #{commentBody,jdbcType=VARCHAR},
+                #{commentCreateTime,jdbcType=TIMESTAMP},
+                #{commentStatus,jdbcType=TINYINT}, #{isDeleted,jdbcType=TINYINT}, #{isAdmin}
+               )
+    </insert>
+    <delete id="deleteBatch">
+        delete from blog_comment where comment_id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    <select id="getCommentByBlogId" resultType="com.javaer.myblog.entity.BlogComment">
+        select * from blog_comment  where blog_id = #{blogId} order by comment_id desc
+    </select>
+    <select id="findByBlogIdAndParentCommentNull" resultType="com.javaer.myblog.entity.BlogComment">
+        select * from blog_comment  where blog_id = #{blogId} and parentcomment_id = -1 order by comment_id desc
+    </select>
+    <select id="findReplyCommentsByParentCommentId" resultType="com.javaer.myblog.entity.BlogComment">
+        select * from blog_comment  where parentcomment_id = #{commentId} order by comment_id desc
+    </select>
+    <select id="getCommentByCommentId" resultType="com.javaer.myblog.entity.BlogComment">
+        select * from blog_comment  where comment_id = #{commentId}
+    </select>
+    <select id="getTotalComments" resultType="java.lang.Integer">
+        select count(*) from blog_comment
+
+    </select>
+    <select id="getAllComment" resultType="com.javaer.myblog.entity.BlogComment">
+        select * from blog_comment
+    </select>
+</mapper>

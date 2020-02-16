@@ -1,0 +1,697 @@
+2020-02-06 10:33:54.807  INFO 14624 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 14624 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 10:33:54.818  INFO 14624 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 10:33:54.918  INFO 14624 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 10:33:54.919  INFO 14624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 10:33:54.920  INFO 14624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 10:33:57.397  INFO 14624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 10:33:57.398  INFO 14624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 10:33:57.448  INFO 14624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 0 JDBC repository interfaces.
+2020-02-06 10:33:57.471  INFO 14624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 10:33:57.474  INFO 14624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 10:33:57.538  INFO 14624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 JPA repository interfaces.
+2020-02-06 10:33:58.120  INFO 14624 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 10:33:59.110  INFO 14624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 10:33:59.127  INFO 14624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 10:33:59.127  INFO 14624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 10:33:59.303  INFO 14624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 10:33:59.304  INFO 14624 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4384 ms
+2020-02-06 10:33:59.807  INFO 14624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 10:34:00.201  INFO 14624 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 10:34:00.507  INFO 14624 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 10:34:00.772  INFO 14624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 10:34:01.494  INFO 14624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 10:34:01.523  INFO 14624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 10:34:02.361  INFO 14624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 10:34:02.384  INFO 14624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 10:34:02.521  INFO 14624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 10:34:03.598  WARN 14624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 10:34:03.933  INFO 14624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 10:34:08.840  INFO 14624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 10:34:08.840  INFO 14624 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 10:34:08.852  INFO 14624 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-06 10:34:08.853  INFO 14624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 10:34:08.856  INFO 14624 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 15.055 seconds (JVM running for 17.437)
+2020-02-06 10:36:29.149  INFO 8352 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 8352 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 10:36:29.153  INFO 8352 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 10:36:29.242  INFO 8352 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 10:36:29.242  INFO 8352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 10:36:29.242  INFO 8352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 10:36:30.436  INFO 8352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 10:36:30.437  INFO 8352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 10:36:30.491  INFO 8352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 0 JDBC repository interfaces.
+2020-02-06 10:36:30.509  INFO 8352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 10:36:30.509  INFO 8352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 10:36:30.541  INFO 8352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2020-02-06 10:36:31.064  INFO 8352 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 10:36:32.039  INFO 8352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 10:36:32.056  INFO 8352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 10:36:32.057  INFO 8352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 10:36:32.271  INFO 8352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 10:36:32.271  INFO 8352 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3029 ms
+2020-02-06 10:36:32.548  INFO 8352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 10:36:32.638  INFO 8352 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 10:36:32.773  INFO 8352 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 10:36:32.885  INFO 8352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 10:36:33.308  INFO 8352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 10:36:33.326  INFO 8352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 10:36:33.697  INFO 8352 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 10:36:33.705  INFO 8352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 10:36:33.769  INFO 8352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 10:36:34.282  WARN 8352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 10:36:34.518  INFO 8352 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 10:36:38.371  INFO 8352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 10:36:38.372  INFO 8352 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 10:36:38.392  INFO 8352 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-02-06 10:36:38.394  INFO 8352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 10:36:38.397  INFO 8352 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 10.38 seconds (JVM running for 12.104)
+2020-02-06 10:43:14.215  INFO 9016 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 9016 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 10:43:14.225  INFO 9016 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 10:43:14.345  INFO 9016 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 10:43:14.346  INFO 9016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 10:43:14.347  INFO 9016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 10:43:15.485  INFO 9016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 10:43:15.485  INFO 9016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 10:43:15.530  INFO 9016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JDBC repository interfaces.
+2020-02-06 10:43:15.543  INFO 9016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 10:43:15.544  INFO 9016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 10:43:15.570  INFO 9016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2020-02-06 10:43:15.913  INFO 9016 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 10:43:16.439  INFO 9016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 10:43:16.450  INFO 9016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 10:43:16.450  INFO 9016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 10:43:16.561  INFO 9016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 10:43:16.562  INFO 9016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2215 ms
+2020-02-06 10:43:16.858  INFO 9016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 10:43:16.943  INFO 9016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 10:43:17.055  INFO 9016 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 10:43:17.141  INFO 9016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 10:43:17.409  INFO 9016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 10:43:17.420  INFO 9016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 10:43:17.677  INFO 9016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 10:43:17.684  INFO 9016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 10:43:17.743  INFO 9016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 10:43:18.214  WARN 9016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 10:43:18.451  INFO 9016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 10:43:22.048  INFO 9016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 10:43:22.049  INFO 9016 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 10:43:22.059  INFO 9016 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-06 10:43:22.059  INFO 9016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 10:43:22.063  INFO 9016 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 9.145 seconds (JVM running for 10.815)
+2020-02-06 10:50:03.407  WARN 9016 --- [http-nio-8081-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [222] milliseconds.
+2020-02-06 11:01:53.997  INFO 14156 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 14156 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 11:01:54.000  INFO 14156 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 11:01:54.068  INFO 14156 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 11:01:54.069  INFO 14156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 11:01:54.080  INFO 14156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 11:01:54.927  INFO 14156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 11:01:54.928  INFO 14156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 11:01:54.966  INFO 14156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JDBC repository interfaces.
+2020-02-06 11:01:54.978  INFO 14156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 11:01:54.979  INFO 14156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 11:01:54.999  INFO 14156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-02-06 11:01:55.330  INFO 14156 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 11:01:55.776  INFO 14156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 11:01:55.786  INFO 14156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 11:01:55.787  INFO 14156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 11:01:55.914  INFO 14156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 11:01:55.914  INFO 14156 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1834 ms
+2020-02-06 11:01:56.129  INFO 14156 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 11:01:56.199  INFO 14156 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 11:01:56.290  INFO 14156 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 11:01:56.386  INFO 14156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 11:01:56.680  INFO 14156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 11:01:56.691  INFO 14156 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 11:01:56.946  INFO 14156 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 11:01:56.953  INFO 14156 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 11:01:57.017  INFO 14156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 11:01:57.425  WARN 14156 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 11:01:57.630  INFO 14156 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 11:02:01.423  INFO 14156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 11:02:01.423  INFO 14156 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 11:02:01.433  INFO 14156 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-06 11:02:01.434  INFO 14156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 11:02:01.437  INFO 14156 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 8.562 seconds (JVM running for 10.144)
+2020-02-06 11:05:42.682  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 7476 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 11:05:42.686  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 11:05:42.773  INFO 7476 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 11:05:42.774  INFO 7476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 11:05:42.775  INFO 7476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 11:05:43.886  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 11:05:43.887  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 11:05:43.941  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 JDBC repository interfaces.
+2020-02-06 11:05:43.957  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 11:05:43.958  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 11:05:43.993  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 JPA repository interfaces.
+2020-02-06 11:05:44.563  INFO 7476 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 11:05:45.229  INFO 7476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 11:05:45.246  INFO 7476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 11:05:45.247  INFO 7476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 11:05:45.463  INFO 7476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 11:05:45.464  INFO 7476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2688 ms
+2020-02-06 11:05:45.735  INFO 7476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 11:05:45.841  INFO 7476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 11:05:46.043  INFO 7476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 11:05:46.302  INFO 7476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 11:05:46.687  INFO 7476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 11:05:46.707  INFO 7476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 11:05:46.956  INFO 7476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 11:05:46.965  INFO 7476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 11:05:47.054  INFO 7476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 11:05:47.483  WARN 7476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 11:05:47.705  INFO 7476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 11:05:51.239  INFO 7476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 11:05:51.240  INFO 7476 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 11:05:51.250  INFO 7476 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-06 11:05:51.251  INFO 7476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 11:05:51.254  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 10.064 seconds (JVM running for 11.987)
+2020-02-06 11:07:21.307  WARN 7476 --- [http-nio-8081-exec-8] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [257] milliseconds.
+2020-02-06 11:50:25.796  INFO 7476 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-06 11:50:25.805  INFO 7476 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 11:50:25.830  INFO 7476 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-06 11:50:25.846  INFO 7476 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-06 11:50:26.613  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 7476 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 11:50:26.614  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 11:50:28.388  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 11:50:28.389  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 11:50:28.437  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 0 JDBC repository interfaces.
+2020-02-06 11:50:28.447  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 11:50:28.448  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 11:50:28.484  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 JPA repository interfaces.
+2020-02-06 11:50:28.680  INFO 7476 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 11:50:29.176  INFO 7476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 11:50:29.177  INFO 7476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 11:50:29.178  INFO 7476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 11:50:29.291  INFO 7476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 11:50:29.292  INFO 7476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2672 ms
+2020-02-06 11:50:29.588  INFO 7476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 11:50:29.652  INFO 7476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-06 11:50:29.702  INFO 7476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-06 11:50:29.703  INFO 7476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 11:50:29.795  INFO 7476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 11:50:29.797  INFO 7476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 11:50:29.900  INFO 7476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 11:50:30.704  WARN 7476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 11:50:31.119  INFO 7476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 11:50:36.584  INFO 7476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 11:50:36.585  INFO 7476 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 11:50:36.601  INFO 7476 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-02-06 11:50:36.602  INFO 7476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 11:50:36.603  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 10.099 seconds (JVM running for 2697.337)
+2020-02-06 11:50:36.606  INFO 7476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-06 12:01:00.128  INFO 7476 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:01:00.131  INFO 7476 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:01:00.135  INFO 7476 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-06 12:01:00.153  INFO 7476 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-02-06 12:01:00.596  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 7476 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:01:00.596  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:01:01.350  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:01:01.350  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:01:01.370  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:01:01.378  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:01:01.378  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:01:01.398  INFO 7476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2020-02-06 12:01:01.487  INFO 7476 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:01:01.630  INFO 7476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-02-06 12:01:01.631  INFO 7476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:01:01.631  INFO 7476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:01:01.667  INFO 7476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:01:01.668  INFO 7476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1068 ms
+2020-02-06 12:01:01.746  INFO 7476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:01:01.756  INFO 7476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-02-06 12:01:01.773  INFO 7476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-02-06 12:01:01.774  INFO 7476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:01:01.819  INFO 7476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:01:01.819  INFO 7476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:01:01.865  INFO 7476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:01:02.161  WARN 7476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:01:02.323  INFO 7476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:01:06.701  INFO 7476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:01:06.701  INFO 7476 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:01:06.709  INFO 7476 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-02-06 12:01:06.710  INFO 7476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-02-06 12:01:06.710  INFO 7476 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 6.19 seconds (JVM running for 3327.444)
+2020-02-06 12:01:06.712  INFO 7476 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-06 12:20:09.165  INFO 26520 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 26520 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:20:09.167  INFO 26520 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:20:09.215  INFO 26520 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:20:09.215  INFO 26520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:20:09.215  INFO 26520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:20:09.985  INFO 26520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:20:09.985  INFO 26520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:20:10.017  INFO 26520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:20:10.027  INFO 26520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:20:10.027  INFO 26520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:20:10.046  INFO 26520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 JPA repository interfaces.
+2020-02-06 12:20:10.459  INFO 26520 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:20:10.969  INFO 26520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:20:10.981  INFO 26520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:20:10.982  INFO 26520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:20:11.098  INFO 26520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:20:11.098  INFO 26520 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1882 ms
+2020-02-06 12:20:11.300  INFO 26520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:20:11.355  INFO 26520 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:20:11.452  INFO 26520 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:20:11.535  INFO 26520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:20:12.020  INFO 26520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:20:12.034  INFO 26520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:20:12.454  INFO 26520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:20:12.462  INFO 26520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:20:12.532  INFO 26520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:20:13.294  WARN 26520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:20:13.651  INFO 26520 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:20:17.856  INFO 26520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:20:17.857  INFO 26520 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:20:17.869  INFO 26520 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-06 12:20:17.870  INFO 26520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:20:17.873  INFO 26520 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 9.816 seconds (JVM running for 11.488)
+2020-02-06 12:22:26.496  INFO 12872 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 12872 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:22:26.500  INFO 12872 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:22:26.575  INFO 12872 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:22:26.576  INFO 12872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:22:26.576  INFO 12872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:22:27.510  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:22:27.511  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:22:27.546  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:22:27.559  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:22:27.559  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:22:27.583  INFO 12872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2020-02-06 12:22:28.295  INFO 12872 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:22:28.935  INFO 12872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:22:28.948  INFO 12872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:22:28.949  INFO 12872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:22:29.079  INFO 12872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:22:29.080  INFO 12872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2503 ms
+2020-02-06 12:22:29.519  INFO 12872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:22:29.743  INFO 12872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:22:29.976  INFO 12872 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:22:30.104  INFO 12872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:22:30.550  INFO 12872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:22:30.570  INFO 12872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:22:30.899  INFO 12872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:22:30.909  INFO 12872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:22:31.004  INFO 12872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:22:31.599  WARN 12872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:22:31.884  INFO 12872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:22:38.136  INFO 12872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:22:38.137  INFO 12872 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:22:38.170  INFO 12872 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-02-06 12:22:38.176  INFO 12872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:22:38.190  INFO 12872 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 12.676 seconds (JVM running for 15.991)
+2020-02-06 12:24:46.280  INFO 15544 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 15544 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:24:46.285  INFO 15544 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:24:46.386  INFO 15544 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:24:46.387  INFO 15544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:24:46.387  INFO 15544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:24:47.220  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:24:47.221  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:24:47.252  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:24:47.263  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:24:47.263  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:24:47.286  INFO 15544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2020-02-06 12:24:47.647  INFO 15544 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:24:48.207  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:24:48.221  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:24:48.222  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:24:48.400  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:24:48.401  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2013 ms
+2020-02-06 12:24:48.714  INFO 15544 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:24:48.873  INFO 15544 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:24:49.201  INFO 15544 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:24:49.338  INFO 15544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:24:49.704  INFO 15544 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:24:49.719  INFO 15544 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:24:50.572  INFO 15544 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:24:50.592  INFO 15544 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:24:50.706  INFO 15544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:24:51.251  WARN 15544 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:24:51.476  INFO 15544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:24:55.425  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:24:55.425  INFO 15544 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:24:55.436  INFO 15544 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-06 12:24:55.437  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:24:55.440  INFO 15544 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 10.226 seconds (JVM running for 12.229)
+2020-02-06 12:25:15.974  INFO 5512 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 5512 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:25:15.978  INFO 5512 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:25:16.184  INFO 5512 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:25:16.185  INFO 5512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:25:16.185  INFO 5512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:25:17.817  INFO 5512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:25:17.818  INFO 5512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:25:17.886  INFO 5512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:25:17.905  INFO 5512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:25:17.906  INFO 5512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:25:17.941  INFO 5512 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2020-02-06 12:25:18.771  INFO 5512 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:25:19.939  INFO 5512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:25:19.968  INFO 5512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:25:19.969  INFO 5512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:25:20.320  INFO 5512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:25:20.321  INFO 5512 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4136 ms
+2020-02-06 12:25:21.050  INFO 5512 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:25:21.306  INFO 5512 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:25:21.458  INFO 5512 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:25:21.568  INFO 5512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:25:21.960  INFO 5512 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:25:21.972  INFO 5512 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:25:22.382  INFO 5512 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:25:22.391  INFO 5512 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:25:22.471  INFO 5512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:25:23.034  WARN 5512 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:25:23.423  INFO 5512 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:25:28.443  INFO 5512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:25:28.444  INFO 5512 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:25:28.457  INFO 5512 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-02-06 12:25:28.458  INFO 5512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:25:28.464  INFO 5512 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 13.839 seconds (JVM running for 16.217)
+2020-02-06 12:26:26.100  INFO 22492 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 22492 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:26:26.105  INFO 22492 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:26:26.309  INFO 22492 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:26:26.311  INFO 22492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:26:26.312  INFO 22492 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:26:27.384  INFO 22492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:26:27.385  INFO 22492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:26:27.423  INFO 22492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:26:27.433  INFO 22492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:26:27.434  INFO 22492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:26:27.461  INFO 22492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2020-02-06 12:26:28.042  INFO 22492 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:26:28.975  INFO 22492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:26:29.018  INFO 22492 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:26:29.019  INFO 22492 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:26:29.385  INFO 22492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:26:29.385  INFO 22492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3073 ms
+2020-02-06 12:26:29.726  INFO 22492 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:26:29.797  INFO 22492 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:26:29.920  INFO 22492 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:26:30.059  INFO 22492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:26:30.460  INFO 22492 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:26:30.475  INFO 22492 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:26:30.978  INFO 22492 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:26:30.997  INFO 22492 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:26:31.135  INFO 22492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:26:31.826  WARN 22492 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:26:32.120  INFO 22492 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:26:36.929  INFO 22492 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:26:36.929  INFO 22492 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:26:36.940  INFO 22492 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-06 12:26:36.941  INFO 22492 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:26:36.946  INFO 22492 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 12.334 seconds (JVM running for 15.082)
+2020-02-06 12:32:25.872  INFO 27532 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 27532 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:32:25.877  INFO 27532 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:32:26.170  INFO 27532 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:32:26.172  INFO 27532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:32:26.173  INFO 27532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:32:28.816  INFO 27532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:32:28.827  INFO 27532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:32:28.891  INFO 27532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:32:28.915  INFO 27532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:32:28.916  INFO 27532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:32:28.957  INFO 27532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 JPA repository interfaces.
+2020-02-06 12:32:29.588  INFO 27532 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:32:30.959  INFO 27532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:32:30.982  INFO 27532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:32:30.983  INFO 27532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:32:31.157  INFO 27532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:32:31.158  INFO 27532 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4985 ms
+2020-02-06 12:32:31.567  INFO 27532 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:32:31.808  INFO 27532 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:32:32.264  INFO 27532 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:32:32.567  INFO 27532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:32:33.231  INFO 27532 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:32:33.272  INFO 27532 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:32:33.893  INFO 27532 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:32:33.916  INFO 27532 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:32:34.112  INFO 27532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:32:34.865  WARN 27532 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:32:35.598  INFO 27532 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:32:41.585  INFO 27532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:32:41.586  INFO 27532 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:32:41.622  INFO 27532 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-02-06 12:32:41.623  INFO 27532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:32:41.635  INFO 27532 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 17.616 seconds (JVM running for 19.932)
+2020-02-06 12:36:36.807  INFO 6328 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 6328 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:36:36.814  INFO 6328 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:36:36.966  INFO 6328 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:36:36.968  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:36:36.971  INFO 6328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:36:39.549  INFO 6328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:36:39.550  INFO 6328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:36:39.594  INFO 6328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:36:39.606  INFO 6328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:36:39.606  INFO 6328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:36:39.630  INFO 6328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2020-02-06 12:36:40.079  INFO 6328 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:36:41.084  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:36:41.104  INFO 6328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:36:41.105  INFO 6328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:36:41.266  INFO 6328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:36:41.266  INFO 6328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4294 ms
+2020-02-06 12:36:41.565  INFO 6328 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:36:41.644  INFO 6328 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:36:41.771  INFO 6328 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:36:41.888  INFO 6328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:36:42.291  INFO 6328 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:36:42.305  INFO 6328 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:36:42.630  INFO 6328 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:36:42.642  INFO 6328 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:36:42.747  INFO 6328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:36:43.305  WARN 6328 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:36:43.583  INFO 6328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:36:48.420  INFO 6328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:36:48.420  INFO 6328 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:36:48.435  INFO 6328 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-02-06 12:36:48.436  INFO 6328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:36:48.439  INFO 6328 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 13.602 seconds (JVM running for 16.762)
+2020-02-06 12:37:50.835  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 2284 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:37:50.843  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:37:50.996  INFO 2284 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 12:37:50.997  INFO 2284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 12:37:50.998  INFO 2284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 12:37:52.628  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:37:52.629  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:37:52.668  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:37:52.682  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:37:52.682  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:37:52.705  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020-02-06 12:37:53.119  INFO 2284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:37:53.768  INFO 2284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:37:53.783  INFO 2284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:37:53.783  INFO 2284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:37:53.939  INFO 2284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:37:53.941  INFO 2284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2941 ms
+2020-02-06 12:37:54.494  INFO 2284 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:37:54.571  INFO 2284 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 12:37:54.715  INFO 2284 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 12:37:54.838  INFO 2284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 12:37:55.266  INFO 2284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 12:37:55.282  INFO 2284 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:37:55.646  INFO 2284 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:37:55.665  INFO 2284 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:37:55.905  INFO 2284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:37:56.641  WARN 2284 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:37:56.918  INFO 2284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:38:02.042  INFO 2284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:38:02.042  INFO 2284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:38:02.058  INFO 2284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-02-06 12:38:02.059  INFO 2284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:38:02.064  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 13.379 seconds (JVM running for 16.525)
+2020-02-06 12:39:41.773  INFO 2284 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:39:41.778  INFO 2284 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:39:41.796  INFO 2284 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-06 12:39:41.827  INFO 2284 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-06 12:39:42.800  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 2284 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:39:42.802  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:39:44.382  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:39:44.382  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:39:44.421  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:39:44.428  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:39:44.429  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:39:44.460  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 JPA repository interfaces.
+2020-02-06 12:39:44.608  INFO 2284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:39:44.818  INFO 2284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:39:44.819  INFO 2284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:39:44.820  INFO 2284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:39:44.886  INFO 2284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:39:44.886  INFO 2284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2069 ms
+2020-02-06 12:39:45.039  INFO 2284 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:39:45.055  INFO 2284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-06 12:39:45.078  INFO 2284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-06 12:39:45.078  INFO 2284 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:39:45.124  INFO 2284 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:39:45.124  INFO 2284 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:39:45.203  INFO 2284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:39:45.608  WARN 2284 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:39:45.804  INFO 2284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:39:52.751  INFO 2284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:39:52.753  INFO 2284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:39:52.771  INFO 2284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-02-06 12:39:52.803  INFO 2284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:39:52.805  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 10.298 seconds (JVM running for 127.266)
+2020-02-06 12:39:52.810  INFO 2284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-06 12:40:11.003  INFO 2284 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:40:11.005  INFO 2284 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:40:11.007  INFO 2284 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-06 12:40:11.035  INFO 2284 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-02-06 12:40:11.831  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 2284 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 12:40:11.832  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 12:40:12.404  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:40:12.404  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 12:40:12.428  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JDBC repository interfaces.
+2020-02-06 12:40:12.438  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 12:40:12.438  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 12:40:12.459  INFO 2284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2020-02-06 12:40:12.555  INFO 2284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 12:40:12.709  INFO 2284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 12:40:12.710  INFO 2284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 12:40:12.711  INFO 2284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 12:40:12.760  INFO 2284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 12:40:12.760  INFO 2284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 919 ms
+2020-02-06 12:40:12.886  INFO 2284 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 12:40:12.899  INFO 2284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-02-06 12:40:12.915  INFO 2284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-02-06 12:40:12.916  INFO 2284 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 12:40:12.949  INFO 2284 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 12:40:12.949  INFO 2284 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 12:40:13.005  INFO 2284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 12:40:13.309  WARN 2284 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 12:40:13.507  INFO 2284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 12:40:18.915  INFO 2284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 12:40:18.916  INFO 2284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 12:40:18.926  INFO 2284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-06 12:40:18.926  INFO 2284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 12:40:18.928  INFO 2284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 7.245 seconds (JVM running for 153.389)
+2020-02-06 12:40:18.929  INFO 2284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-06 14:32:37.315  INFO 25856 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 25856 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 14:32:37.324  INFO 25856 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 14:32:37.543  INFO 25856 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 14:32:37.550  INFO 25856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 14:32:37.550  INFO 25856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 14:32:40.066  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 14:32:40.068  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 14:32:40.163  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79ms. Found 0 JDBC repository interfaces.
+2020-02-06 14:32:40.210  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 14:32:40.211  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 14:32:40.266  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 JPA repository interfaces.
+2020-02-06 14:32:40.974  INFO 25856 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 14:32:41.862  INFO 25856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 14:32:41.878  INFO 25856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 14:32:41.879  INFO 25856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 14:32:42.047  INFO 25856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 14:32:42.048  INFO 25856 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4497 ms
+2020-02-06 14:32:42.564  INFO 25856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 14:32:42.913  INFO 25856 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 14:32:43.513  INFO 25856 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 14:32:43.878  INFO 25856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 14:32:44.564  INFO 25856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 14:32:44.600  INFO 25856 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 14:32:45.162  INFO 25856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 14:32:45.181  INFO 25856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 14:32:45.280  INFO 25856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 14:32:46.119  WARN 25856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 14:32:46.474  INFO 25856 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 14:32:51.787  INFO 25856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 14:32:51.787  INFO 25856 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 14:32:51.817  INFO 25856 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2020-02-06 14:32:51.819  INFO 25856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 14:32:51.826  INFO 25856 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 16.022 seconds (JVM running for 22.347)
+2020-02-06 14:34:04.197  INFO 25856 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-06 14:34:04.199  INFO 25856 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 14:34:04.223  INFO 25856 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-06 14:34:04.241  INFO 25856 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-06 14:34:04.698  INFO 25856 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 25856 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 14:34:04.698  INFO 25856 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 14:34:05.414  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 14:34:05.414  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 14:34:05.438  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JDBC repository interfaces.
+2020-02-06 14:34:05.445  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 14:34:05.445  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 14:34:05.464  INFO 25856 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020-02-06 14:34:05.598  INFO 25856 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 14:34:05.838  INFO 25856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 14:34:05.840  INFO 25856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 14:34:05.842  INFO 25856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 14:34:05.927  INFO 25856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 14:34:05.927  INFO 25856 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1225 ms
+2020-02-06 14:34:06.141  INFO 25856 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 14:34:06.166  INFO 25856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-06 14:34:06.190  INFO 25856 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-06 14:34:06.191  INFO 25856 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 14:34:06.246  INFO 25856 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 14:34:06.246  INFO 25856 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 14:34:06.344  INFO 25856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 14:34:06.745  WARN 25856 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 14:34:06.965  INFO 25856 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 14:34:13.491  INFO 25856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 14:34:13.491  INFO 25856 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 14:34:13.507  INFO 25856 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-02-06 14:34:13.508  INFO 25856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 14:34:13.509  INFO 25856 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 8.901 seconds (JVM running for 104.03)
+2020-02-06 14:34:13.516  INFO 25856 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-06 15:23:08.965  WARN 25856 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=7m2s480ms89µs).
+2020-02-06 15:32:53.839  INFO 22284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 22284 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 15:32:53.841  INFO 22284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 15:32:53.905  INFO 22284 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\javaEE课件\JavaEE就业实战\05-SSM项目实战-EasyUI+Maven+Shiro权限系统\maven\mavenrepository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/javaEE课件/JavaEE就业实战/05-SSM项目实战-EasyUI+Maven+Shiro权限系统/maven/mavenrepository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-06 15:32:53.905  INFO 22284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-06 15:32:53.905  INFO 22284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-06 15:32:57.113  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 15:32:57.116  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 15:32:57.161  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 JDBC repository interfaces.
+2020-02-06 15:32:57.174  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 15:32:57.175  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 15:32:57.203  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 JPA repository interfaces.
+2020-02-06 15:32:57.763  INFO 22284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 15:32:59.114  INFO 22284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 15:32:59.140  INFO 22284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 15:32:59.141  INFO 22284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 15:32:59.340  INFO 22284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 15:32:59.341  INFO 22284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5435 ms
+2020-02-06 15:32:59.745  INFO 22284 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 15:33:00.069  INFO 22284 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-06 15:33:00.567  INFO 22284 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-06 15:33:00.958  INFO 22284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-06 15:33:01.737  INFO 22284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-06 15:33:01.768  INFO 22284 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 15:33:02.413  INFO 22284 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 15:33:02.430  INFO 22284 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 15:33:02.562  INFO 22284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 15:33:03.577  WARN 22284 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 15:33:04.401  INFO 22284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 15:33:11.995  INFO 22284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 15:33:11.997  INFO 22284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 15:33:12.020  INFO 22284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-02-06 15:33:12.022  INFO 22284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 15:33:12.027  INFO 22284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 19.139 seconds (JVM running for 23.108)
+2020-02-06 15:38:01.558  INFO 22284 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-06 15:38:01.562  INFO 22284 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 15:38:01.567  INFO 22284 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-06 15:38:01.588  INFO 22284 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-06 15:38:02.282  INFO 22284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Starting MyblogApplication on DESKTOP-A0U5NM7 with PID 22284 (started by minifull in D:\学业为重\Myblog\minifullblog)
+2020-02-06 15:38:02.283  INFO 22284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : No active profile set, falling back to default profiles: default
+2020-02-06 15:38:03.313  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 15:38:03.314  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-02-06 15:38:03.365  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 JDBC repository interfaces.
+2020-02-06 15:38:03.372  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-06 15:38:03.372  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-06 15:38:03.405  INFO 22284 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 JPA repository interfaces.
+2020-02-06 15:38:03.556  INFO 22284 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-06 15:38:03.811  INFO 22284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-02-06 15:38:03.813  INFO 22284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-06 15:38:03.814  INFO 22284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-06 15:38:03.883  INFO 22284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-06 15:38:03.883  INFO 22284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1590 ms
+2020-02-06 15:38:04.040  INFO 22284 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-06 15:38:04.067  INFO 22284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-06 15:38:04.097  INFO 22284 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-06 15:38:04.098  INFO 22284 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-06 15:38:04.169  INFO 22284 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-06 15:38:04.170  INFO 22284 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-06 15:38:04.330  INFO 22284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-06 15:38:05.066  WARN 22284 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-06 15:38:05.408  INFO 22284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-06 15:38:12.406  INFO 22284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-06 15:38:12.406  INFO 22284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-06 15:38:12.423  INFO 22284 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-02-06 15:38:12.423  INFO 22284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-02-06 15:38:12.424  INFO 22284 --- [restartedMain] com.javaer.myblog.MyblogApplication      : Started MyblogApplication in 10.311 seconds (JVM running for 323.505)
+2020-02-06 15:38:12.426  INFO 22284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-06 17:19:35.988  WARN 22284 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=19m29s416ms995µs900ns).
